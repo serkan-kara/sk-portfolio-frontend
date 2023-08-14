@@ -13,6 +13,7 @@ const config: Config = {
 			},
 			colors: {
 				darkGunmetal: "#212130",
+				platinum: "#e6e6e6",
 			},
 		},
 	},
