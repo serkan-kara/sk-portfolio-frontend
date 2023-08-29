@@ -11,3 +11,18 @@ body {
 footer {
 	margin-top: auto;
 }
+
+.image-container {
+	width: 100%;
+}
+
+.image-container div {
+	position: unset !important;
+}
+
+.image-container .image-prof {
+	object-fit: contain;
+	width: 100% !important;
+	position: relative !important;
+	height: unset !important;
+}

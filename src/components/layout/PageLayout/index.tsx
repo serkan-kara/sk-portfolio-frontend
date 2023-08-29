@@ -7,7 +7,7 @@ interface IPageLayoutProps {
 const PageLayout: React.FC<IPageLayoutProps> = ({ children }) => {
 	return (
 		<>
-			<div className='md:container pt-6'>
+			<div className='md:container pt-6 px-4'>
 				<Topbar />
 				<main className='py-4'>{children}</main>
 			</div>
