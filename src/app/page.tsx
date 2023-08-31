@@ -19,7 +19,7 @@ export default function Home() {
 				</div>
 				<div className='flex flex-col space-y-4 md:pr-10'>
 					<Text type='h1' className='text-6xl font-header font-bold text-white'>
-						Hi I am <span className='font-bold text-folly'>Serkan KARA</span>
+						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>
 					</Text>
 					<Text type='p' className='font-light'>
 						A passionate software engineer on a mission to turn ideas into elegant lines of code. Join me on this
