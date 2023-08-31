@@ -3,7 +3,7 @@ import { Logo } from "@/components/container/Logo";
 
 const Topbar = () => {
 	return (
-		<div className='flex items-center justify-between'>
+		<div className='flex items-center justify-between mb-10'>
 			<Logo />
 			<MainMenu />
 		</div>

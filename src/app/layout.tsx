@@ -1,9 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Raleway, Lato } from "next/font/google";
 import { PageLayout } from "@/components/layout/PageLayout";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"], variable: "--header-font" });
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export const metadata: Metadata = {
 	title: "Serkan Kara - Software Engineer",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' className='bg-darkGunmetal text-platinum text-sm'>
-			<body className={inter.className}>
+			<body className={`${raleway.variable} ${lato.className}`}>
 				<PageLayout>{children}</PageLayout>
 			</body>
 		</html>

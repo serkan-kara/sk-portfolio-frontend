@@ -8,12 +8,23 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontSize: {
+				base: ["1.15rem", {
+					lineHeight: '2rem',
+					letterSpacing: '0.15rem'
+				}],
+			},
+			fontFamily: {
+				header: "var(--header-font)",
+			},
 			container: {
 				center: true,
 			},
 			colors: {
-				darkGunmetal: "#212130",
+				darkGunmetalBlue: "#212130",
+				darkGunmetal: "#212428",
 				platinum: "#e6e6e6",
+				folly: "#ff014f",
 			},
 		},
 	},

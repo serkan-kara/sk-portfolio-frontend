@@ -7,11 +7,11 @@ interface IPageLayoutProps {
 const PageLayout: React.FC<IPageLayoutProps> = ({ children }) => {
 	return (
 		<>
-			<div className='md:container pt-6 px-4'>
+			<div className='xl:container pt-6 px-4'>
 				<Topbar />
-				<main className='py-4'>{children}</main>
+				<main className="text-sm md:text-base">{children}</main>
 			</div>
-			<footer className="md:container">Footer will be here</footer>
+			<footer className="xl:container px-4">Footer will be here</footer>
 		</>
 	);
 };
