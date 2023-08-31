@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Raleway, Lato } from "next/font/google";
+import { Raleway, Lato, Poppins } from "next/font/google";
 import { PageLayout } from "@/components/layout/PageLayout";
 
 const raleway = Raleway({ subsets: ["latin"], variable: "--header-font" });
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700", "900"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900"] });
 
 export const metadata: Metadata = {
 	title: "Serkan Kara - Software Engineer",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' className='bg-darkGunmetal text-platinum text-sm'>
-			<body className={`${raleway.variable} ${lato.className}`}>
+			<body className={`${raleway.variable} ${poppins.className}`}>
 				<PageLayout>{children}</PageLayout>
 			</body>
 		</html>

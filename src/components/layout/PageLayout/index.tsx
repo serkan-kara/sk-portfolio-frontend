@@ -9,7 +9,7 @@ const PageLayout: React.FC<IPageLayoutProps> = ({ children }) => {
 		<>
 			<div className='xl:container pt-6 px-4'>
 				<Topbar />
-				<main className="text-sm md:text-base">{children}</main>
+				<main className="text-sm md:text-base text-lightPeriwinkle">{children}</main>
 			</div>
 			<footer className="xl:container px-4">Footer will be here</footer>
 		</>

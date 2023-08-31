@@ -9,10 +9,12 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontSize: {
-				base: ["1.15rem", {
-					lineHeight: '2rem',
-					letterSpacing: '0.15rem'
-				}],
+				base: [
+					"1.15rem",
+					{
+						lineHeight: "2rem",
+					},
+				],
 			},
 			fontFamily: {
 				header: "var(--header-font)",
@@ -21,8 +23,10 @@ const config: Config = {
 				center: true,
 			},
 			colors: {
+				lightPeriwinkle: "#c4cfde",
 				darkGunmetalBlue: "#212130",
 				darkGunmetal: "#212428",
+				gunmetal: "#29293b",
 				platinum: "#e6e6e6",
 				folly: "#ff014f",
 			},
