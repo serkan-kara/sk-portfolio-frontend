@@ -1,11 +1,28 @@
-import { PythonSVG } from "@/common/icons/PythonSVG";
+import { IIconGroupItem, ISVGProps } from "@/common/types";
+import { IconGroup } from "@/components/container/IconGroup";
 import { ProjectCard } from "@/components/container/ProjectCard";
+import { Skillset } from "@/components/container/Skillset";
 import { Text } from "@/components/ui/Text";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function Home() {
+	const contactItems: IIconGroupItem<ISVGProps>[] = [
+		{
+			id: "0",
+			icon: AiOutlineLinkedin,
+			link: "https://www.linkedin.com/in/srkn-kara/",
+			target: "_blank",
+		},
+		{
+			id: "1",
+			icon: AiFillGithub,
+			link: "https://github.com/serkan-kara",
+			target: "_blank",
+		},
+	];
+
 	return (
 		<>
 			<div className='flex flex-col items-center space-y-6 md:flex-row-reverse md:space-y-0'>
@@ -27,23 +44,15 @@ export default function Home() {
 						journey through the ever-evolving realm of technology, where innovation knows no bounds. Lets build the
 						future, one keystroke at a time.
 					</Text>
-					<div className='flex space-x-4'>
-						<Link href={"https://www.linkedin.com/in/srkn-kara/"} target='_blank'>
-							<div className='p-4 rounded-xl bg-gradient-to-r from-gunmetal to-darkGunmetalBlue shadow-md'>
-								<AiOutlineLinkedin className='w-12 h-12 text-white' />
-							</div>
-						</Link>
-						<Link href={"https://github.com/serkan-kara"} target='_blank'>
-							<div className='p-4 rounded-xl bg-gradient-to-r from-gunmetal to-darkGunmetalBlue shadow-md'>
-								<AiFillGithub className='w-12 h-12 text-white' />
-							</div>
-						</Link>
-						<div className='p-4 rounded-xl bg-gradient-to-r from-gunmetal to-darkGunmetalBlue shadow-md'>
-							<PythonSVG className='w-12 h-12' />
-						</div>
+					<div className='flex justify-between'>
+						<IconGroup header={"Let's meet"} items={contactItems} />
+						<IconGroup header={"Primary skills"} items={contactItems} />
 					</div>
 				</div>
 			</div>
+			<article>
+				<Skillset />
+			</article>
 			<div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
 				<ProjectCard />
 				<ProjectCard />

@@ -1,4 +1,3 @@
-import { SVGProps } from "react";
 import { ISVGProps } from "@/common/types";
 
 const PythonSVG: React.FC<ISVGProps> = (props) => {
