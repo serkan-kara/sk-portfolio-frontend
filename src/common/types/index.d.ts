@@ -4,6 +4,7 @@ export interface ISVGProps extends SVGProps<SVGSVGElement>, HTMLAttributes<HTMLD
 
 export interface IIconGroupItem<T> {
 	id: string;
+	name?: string;
 	icon: ComponentType<T>;
 	link?: string;
 	target?: HTMLAttributeAnchorTarget;

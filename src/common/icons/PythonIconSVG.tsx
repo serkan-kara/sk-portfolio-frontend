@@ -1,6 +1,6 @@
 import { ISVGProps } from "@/common/types";
 
-const PythonSVG: React.FC<ISVGProps> = (props) => {
+const PythonIconSVG: React.FC<ISVGProps> = (props) => {
 	return (
 		<svg version='1.1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 48 48' {...props}>
 			<g id='Layer_1'></g>
@@ -54,4 +54,4 @@ const PythonSVG: React.FC<ISVGProps> = (props) => {
 	);
 };
 
-export { PythonSVG };
+export { PythonIconSVG };

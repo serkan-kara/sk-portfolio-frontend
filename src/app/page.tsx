@@ -1,24 +1,49 @@
+import { NextJSIconSVG } from "@/common/icons/NextJSIconSVG";
+import { ReactJSIconSVG } from "@/common/icons/ReactJSIconSVG";
+import { TypescriptIconSVG } from "@/common/icons/TypescriptIconSVG";
 import { IIconGroupItem, ISVGProps } from "@/common/types";
 import { IconGroup } from "@/components/container/IconGroup";
 import { ProjectCard } from "@/components/container/ProjectCard";
 import { Skillset } from "@/components/container/Skillset";
 import { Text } from "@/components/ui/Text";
 import Image from "next/image";
-import Link from "next/link";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function Home() {
 	const contactItems: IIconGroupItem<ISVGProps>[] = [
 		{
 			id: "0",
+			name: "Linkedin",
 			icon: AiOutlineLinkedin,
 			link: "https://www.linkedin.com/in/srkn-kara/",
 			target: "_blank",
 		},
 		{
 			id: "1",
+			name: "Github",
 			icon: AiFillGithub,
 			link: "https://github.com/serkan-kara",
+			target: "_blank",
+		},
+	];
+
+	const primarySkills: IIconGroupItem<ISVGProps>[] = [
+		{
+			id: "1",
+			name: "NextJS",
+			icon: NextJSIconSVG,
+			target: "_blank",
+		},
+		{
+			id: "2",
+			name: "Typescript",
+			icon: TypescriptIconSVG,
+			target: "_blank",
+		},
+		{
+			id: "0",
+			name: "ReactJS",
+			icon: ReactJSIconSVG,
 			target: "_blank",
 		},
 	];
@@ -45,8 +70,8 @@ export default function Home() {
 						future, one keystroke at a time.
 					</Text>
 					<div className='flex justify-between'>
-						<IconGroup header={"Let's meet"} items={contactItems} />
-						<IconGroup header={"Primary skills"} items={contactItems} />
+						<IconGroup header={"LET'S MEET"} items={contactItems} />
+						<IconGroup header={"PRIMARY SKILLS"} items={primarySkills} />
 					</div>
 				</div>
 			</div>
