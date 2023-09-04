@@ -1,3 +1,4 @@
+import { PythonSVG } from "@/common/icons/PythonSVG";
 import { ProjectCard } from "@/components/container/ProjectCard";
 import { Text } from "@/components/ui/Text";
 import Image from "next/image";
@@ -17,11 +18,11 @@ export default function Home() {
 						sizes={"(max-width: 768px) 100vw, 700px"}
 					/>
 				</div>
-				<div className='flex flex-col space-y-4 md:pr-10'>
+				<div className='flex flex-col space-y-6 md:pr-10'>
 					<Text type='h1' className='text-6xl font-header font-bold text-white'>
 						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>
 					</Text>
-					<Text type='p' className='font-light'>
+					<Text type='p' className='font-light border-white border-b border-opacity-10 pb-4'>
 						A passionate software engineer on a mission to turn ideas into elegant lines of code. Join me on this
 						journey through the ever-evolving realm of technology, where innovation knows no bounds. Lets build the
 						future, one keystroke at a time.
@@ -37,6 +38,9 @@ export default function Home() {
 								<AiFillGithub className='w-12 h-12 text-white' />
 							</div>
 						</Link>
+						<div className='p-4 rounded-xl bg-gradient-to-r from-gunmetal to-darkGunmetalBlue shadow-md'>
+							<PythonSVG className='w-12 h-12' />
+						</div>
 					</div>
 				</div>
 			</div>
