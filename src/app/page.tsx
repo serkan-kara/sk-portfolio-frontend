@@ -50,7 +50,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className='flex flex-col items-center space-y-6 md:flex-row-reverse md:space-y-0'>
+			<div className='flex flex-col items-center space-y-6 md:flex-row-reverse md:space-x-reverse md:space-x-16 md:space-y-0'>
 				<div className='relative image-container w-full xl:w-2/3'>
 					<Image
 						src={"/profile-image.jpeg"}
@@ -60,7 +60,7 @@ export default function Home() {
 						sizes={"(max-width: 768px) 100vw, 700px"}
 					/>
 				</div>
-				<div className='flex flex-col space-y-6 md:pr-10'>
+				<div className='flex flex-col space-y-6'>
 					<Text type='h1' className='text-6xl font-header font-bold text-white'>
 						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>
 					</Text>
@@ -69,9 +69,9 @@ export default function Home() {
 						journey through the ever-evolving realm of technology, where innovation knows no bounds. Lets build the
 						future, one keystroke at a time.
 					</Text>
-					<div className='flex justify-between'>
+					<div className='flex flex-col justify-between md:flex-row space-y-4 md:space-y-0'>
 						<IconGroup header={"LET'S MEET"} items={contactItems} />
-						<IconGroup header={"PRIMARY SKILLS"} items={primarySkills} />
+						<IconGroup header={"MOST USED SKILLS"} items={primarySkills} />
 					</div>
 				</div>
 			</div>
