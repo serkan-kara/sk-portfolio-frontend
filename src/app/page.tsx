@@ -65,7 +65,7 @@ export default function Home() {
 						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>
 					</Text>
 					<Text type='p' className='font-light border-white border-b border-opacity-10 pb-4'>
-						A passionate software engineer on a mission to turn ideas into elegant lines of code. Join me on this
+						I am a passionate software engineer on a mission to turn ideas into elegant lines of code. Join me on this
 						journey through the ever-evolving realm of technology, where innovation knows no bounds. Lets build the
 						future, one keystroke at a time.
 					</Text>
