@@ -29,6 +29,7 @@ const config: Config = {
 				gunmetal: "#29293b",
 				platinum: "#e6e6e6",
 				folly: "#ff014f",
+				star: "#ed8A19"
 			},
 		},
 	},
