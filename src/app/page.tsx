@@ -50,8 +50,8 @@ export default function Home() {
 
 	return (
 		<>
-			<div className='flex flex-col items-center space-y-6 md:flex-row-reverse md:space-x-reverse md:space-x-16 md:space-y-0'>
-				<div className='relative image-container w-full xl:w-2/3'>
+			<div className='flex flex-col space-y-6 md:flex-row-reverse md:space-x-reverse md:space-x-16 md:space-y-0'>
+				{/* <div className='relative image-container w-full xl:w-2/3'>
 					<Image
 						src={"/profile-image.jpeg"}
 						alt='Picture of the author'
@@ -59,7 +59,8 @@ export default function Home() {
 						fill={true}
 						sizes={"(max-width: 768px) 100vw, 700px"}
 					/>
-				</div>
+				</div> */}
+				<div className='relative bg-profile-image w-full md:w-2/3 h-[350px] bg-cover bg-center xl:bg-top-center shadow-lg rounded-xl md:rounded-md'></div>
 				<div className='flex flex-col space-y-6'>
 					<Text type='h1' className='text-6xl font-header font-bold text-white'>
 						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>

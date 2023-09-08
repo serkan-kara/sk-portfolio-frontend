@@ -31,6 +31,9 @@ const config: Config = {
 				folly: "#ff014f",
 				star: "#ed8A19"
 			},
+			backgroundImage: {
+				'profile-image': "url('/profile-image.jpeg')"
+			}
 		},
 	},
 	plugins: [],
