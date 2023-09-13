@@ -11,7 +11,7 @@ const Skillset = () => {
 	return (
 		<div className='flex flex-col py-10 mt-10 space-y-6'>
 			<Text type='h1' className='text-2xl text-folly font-bold border-white border-b border-opacity-10 pb-4'>
-				Tech Stack
+				Current Tech Stack
 			</Text>
 			<div className='grid grid-flow-row gap-4 md:grid-cols-3'>
 				<Skill name='ReactJS' skillIcon={ReactJSIconSVG} experience={5} rating={5} />

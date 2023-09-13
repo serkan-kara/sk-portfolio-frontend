@@ -112,8 +112,8 @@ export default function Home() {
 						sizes={"(max-width: 768px) 100vw, 700px"}
 					/>
 				</div> */}
-				<div className='relative bg-profile-image w-full md:w-2/3 h-[350px] bg-cover bg-center xl:bg-top-center shadow-lg rounded-xl md:rounded-md'></div>
-				<div className='flex flex-col space-y-6'>
+				<div className='relative bg-profile-image w-full md:w-2/3 h-[300px] md:h-[500px] bg-cover bg-center xl:bg-top-center shadow-lg rounded-xl md:rounded-md'></div>
+				<div className='flex flex-col space-y-6 justify-center'>
 					<Text type='h1' className='text-6xl font-header font-bold text-white'>
 						Hi, I am <span className='font-bold text-folly'>Serkan KARA</span>
 					</Text>
@@ -135,7 +135,7 @@ export default function Home() {
 				<Text type='h1' className='text-2xl text-folly font-bold border-white border-b border-opacity-10 pb-4'>
 					Ongoing projects
 				</Text>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 					{activeProjects.map((project) => (
 						<ProjectCard key={project.id} project={project} />
 					))}
