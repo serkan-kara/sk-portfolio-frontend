@@ -17,7 +17,7 @@ const Skillset = () => {
 				<Skill name='ReactJS' skillIcon={ReactJSIconSVG} experience={5} rating={5} />
 				<Skill name='NextJS' skillIcon={NextJSIconSVG} experience={2} rating={4} />
 				<Skill name='NodeJS' skillIcon={NodeJSIconSVG} experience={6} rating={4} />
-				<Skill name='NodeJS' skillIcon={TypescriptIconSVG} experience={6} rating={4} />
+				<Skill name='Typescript' skillIcon={TypescriptIconSVG} experience={2} rating={4} />
 				<Skill name='Python' skillIcon={PythonIconSVG} experience={1} rating={1} learning />
 				<Skill name='.Net' skillIcon={DotNetIconSVG} experience={9} rating={5} obsolete/>
 			</div>
