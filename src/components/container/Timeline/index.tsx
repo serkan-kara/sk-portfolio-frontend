@@ -7,7 +7,7 @@ interface ITimelineProps {
 
 const Timeline: React.FC<ITimelineProps> = ({ items }) => {
 	return (
-		<div>
+		<div className='flex flex-col space-y-4'>
 			{items.map((item) => (
 				<Node key={item.order} item={item} />
 			))}

@@ -1,3 +1,4 @@
+import { ProgressBar } from "@/components/container/ProgressBar";
 import { Timeline } from "@/components/container/Timeline";
 import { IBackgroundItem } from "@/components/container/Timeline/types";
 
@@ -7,6 +8,7 @@ const Background = () => {
 			order: 1,
 			name: "BG 1",
 			description: "",
+			title: "Software Engineer",
 			startDate: "2021",
 			endDate: "2022",
 			isPresent: false,
@@ -15,6 +17,7 @@ const Background = () => {
 			order: 2,
 			name: "BG 2",
 			description: "",
+			title: "Software Engineer",
 			startDate: "2021",
 			endDate: "2022",
 			isPresent: false,
@@ -23,13 +26,20 @@ const Background = () => {
 			order: 3,
 			name: "BG 3",
 			description: "",
+			title: "Software Engineer",
 			startDate: "2021",
 			endDate: "2022",
 			isPresent: false,
 		},
 	];
 
-	return <Timeline items={backgroundItems} />;
+	return (
+		<div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+			<Timeline items={backgroundItems} />
+			<div>Tech stack</div>
+			<ProgressBar.Circle />
+		</div>
+	);
 };
 
 export default Background;
