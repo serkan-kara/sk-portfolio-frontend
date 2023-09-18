@@ -36,8 +36,10 @@ const Background = () => {
 	return (
 		<div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
 			<Timeline items={backgroundItems} />
-			<div>Tech stack</div>
-			<ProgressBar.Circle />
+			<div>
+				<span>Tech Stack</span>
+				<ProgressBar percent={70} />
+			</div>
 		</div>
 	);
 };
