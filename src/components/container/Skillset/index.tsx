@@ -14,12 +14,12 @@ const Skillset = () => {
 				Current Tech Stack
 			</Text>
 			<div className='grid grid-flow-row gap-4 md:grid-cols-3'>
-				<Skill name='ReactJS' skillIcon={ReactJSIconSVG} experience={5} rating={5} />
-				<Skill name='NextJS' skillIcon={NextJSIconSVG} experience={2} rating={4} />
-				<Skill name='NodeJS' skillIcon={NodeJSIconSVG} experience={6} rating={4} />
-				<Skill name='Typescript' skillIcon={TypescriptIconSVG} experience={2} rating={4} />
-				<Skill name='Python' skillIcon={PythonIconSVG} experience={1} rating={1} learning />
-				<Skill name='.Net' skillIcon={DotNetIconSVG} experience={9} rating={5} obsolete/>
+				<Skill name='ReactJS' skillIcon={ReactJSIconSVG} experience={5} rating={5} startYear={2018} />
+				<Skill name='NextJS' skillIcon={NextJSIconSVG} experience={2} rating={4} startYear={2021} />
+				<Skill name='NodeJS' skillIcon={NodeJSIconSVG} experience={6} rating={4} startYear={2017} />
+				<Skill name='Typescript' skillIcon={TypescriptIconSVG} experience={2} rating={4} startYear={2021} />
+				<Skill name='Python' skillIcon={PythonIconSVG} experience={1} rating={1} learning startYear={2023} />
+				<Skill name='.Net' skillIcon={DotNetIconSVG} experience={9} rating={5} obsolete startYear={2009} />
 			</div>
 		</div>
 	);

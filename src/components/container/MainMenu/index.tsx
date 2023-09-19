@@ -6,6 +6,7 @@ const MainMenu = () => {
 		<nav className='flex flex-col space-y-4 md:space-y-0 md:flex-row space-x-4 items-center'>
 			<ul className='flex space-x-4'>
 				<Link href='/about'>About Me</Link>
+				<Link href='/blog'>Blog</Link>
 				<Link href='/background'>Background</Link>
 				<Link href='/'>Contact</Link>
 			</ul>
