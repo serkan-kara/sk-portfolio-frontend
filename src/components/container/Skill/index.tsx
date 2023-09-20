@@ -54,7 +54,7 @@ const Skill: React.FC<ISkillProps> = (props) => {
 				<div className='w-12 h-12'>{<props.skillIcon />}</div>
 				<div className='flex flex-col space-y-2'>
 					{renderStars()}
-					<div className='text-xs text-platinum'>{`${props.experience} years of experience`}</div>
+					<div className='text-xs text-platinum'>{getYearsOfExperience(props.startYear)}</div>
 				</div>
 			</div>
 			{props.description && <div>{props.description}</div>}
